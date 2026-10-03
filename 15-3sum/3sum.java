@@ -7,7 +7,6 @@ class Solution {
 
         for (int i = 0; i < nums.length - 2; i++) {
 
-            // skip duplicate values
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
