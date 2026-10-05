@@ -8,7 +8,6 @@ class Solution {
             } 
             else {
                 int profit = prices[i] - buyPrice;
-
                 if (profit > maxProfit) {
                     maxProfit = profit;
                 }
