@@ -2,6 +2,7 @@ class Solution {
     public boolean isPalindrome(String s) {
         return check(s, 0, s.length() - 1);
     }
+    
     private boolean check(String s, int left, int right) {
         if (left >= right) {
             return true;
