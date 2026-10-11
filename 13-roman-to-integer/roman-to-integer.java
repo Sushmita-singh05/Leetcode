@@ -1,11 +1,8 @@
-
 class Solution {
     public int romanToInt(String s) {
         int sum = 0;
-
         for (int i = 0; i < s.length(); i++) {
             int current = value(s.charAt(i));
-
             if (i + 1 < s.length() &&
                 current < value(s.charAt(i + 1))) {
                 sum -= current;
@@ -16,7 +13,6 @@ class Solution {
 
         return sum;
     }
-
     public int value(char ch) {
         switch (ch) {
             case 'I': return 1;
