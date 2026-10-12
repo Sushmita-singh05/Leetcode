@@ -5,7 +5,7 @@ class Solution {
         temp = x;
         while(temp != 0){
             num = temp % 10;
-            
+
             if (rev > 214748364 || rev < -214748364) {
                 return 0;
             }
@@ -20,5 +20,6 @@ class Solution {
             temp = temp / 10;
         }
         return rev;
+        
     }
 }
