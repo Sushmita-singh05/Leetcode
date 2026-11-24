@@ -15,18 +15,11 @@ class Solution {
                           List<Integer> current,
                           List<List<Integer>> result) {
 
-        // Store current subset
         result.add(new ArrayList<>(current));
 
         for (int i = index; i < nums.length; i++) {
-
-            // Include element
             current.add(nums[i]);
-
-            // Recursive call
             backtrack(nums, i + 1, current, result);
-
-            // Backtracking
             current.remove(current.size() - 1);
         }
     }
